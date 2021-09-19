@@ -31,9 +31,5 @@ public class HelloController {
 		return "Hello there " + firstname + " " + secondname; 
 	}
 
-	
-	@RequestMapping(value="/userOrder={id}", method=RequestMethod.GET)
-	public String orders(@PathVariable int id){
-		return "Order id = " + id;
-	}
+
 }
